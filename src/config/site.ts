@@ -1,174 +1,184 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "cURL to Fetch",
+  title: "cURL to Fetch Converter — Convert curl to JavaScript fetch / axios",
+  description:
+    "Instantly convert curl commands to JavaScript fetch, axios, or XMLHttpRequest code. Free browser-only tool — no signup required.",
+  url: "https://curl-to-fetch.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "Code", // lucide-react icon name
+  brandAccentColor: "#6366f1", // indigo accent
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "curl to fetch",
+    "curl to javascript",
+    "curl to axios",
+    "convert curl command",
+    "curl converter",
+    "fetch API converter",
+    "curl to XMLHttpRequest",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#6366f1",
 
   // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
+  // Social Profiles
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/curl-to-fetch",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "cURL to Fetch is a free developer tool that converts curl commands into JavaScript fetch, axios, or XMLHttpRequest code in seconds.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Convert to fetch / axios / XHR",
+      "Handles headers & request body",
+      "Supports all HTTP methods",
+      "100% browser-based, no backend",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free Developer Tool",
+    titleLine1: "Convert curl to",
+    titleGradient: "JavaScript Code",
+    subtitle:
+      "Paste any curl command and instantly get equivalent JavaScript fetch, axios, or XMLHttpRequest code. Works 100% in your browser — no API key, no signup.",
   },
 
-  // Feature Cards (shown on homepage)
+  // Feature Cards
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "⚡",
+      title: "Instant Conversion",
+      description:
+        "Paste a curl command and get clean JavaScript code immediately.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🔧",
+      title: "3 Output Formats",
+      description:
+        "Choose between fetch, axios, or XMLHttpRequest based on your project.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🔒",
+      title: "100% Private",
+      description:
+        "Everything runs in your browser — your curl commands never leave your machine.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
+  // Related Tools
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Path Finder",
+      url: "https://json-path-finder.tools.jagodana.com",
+      icon: "🔍",
+      description: "Find and extract JSON paths from any JSON object.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
-      icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      name: "HTTP Status Debugger",
+      url: "https://http-status-debugger.tools.jagodana.com",
+      icon: "🌐",
+      description: "Look up and understand any HTTP status code.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "Latency Budget Calculator",
+      url: "https://latency-budget-calculator.tools.jagodana.com",
+      icon: "⏱️",
+      description: "Plan your web performance latency budget.",
+    },
+    {
+      name: "Favicon Generator",
+      url: "https://favicon-generator.tools.jagodana.com",
+      icon: "🎨",
+      description: "Generate all favicon sizes + manifest from any image.",
     },
     {
       name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
+      url: "https://color-palette-explorer.tools.jagodana.com",
       icon: "🎭",
       description: "Extract color palettes from any image.",
     },
+  ],
+
+  // HowTo Steps
+  howToSteps: [
     {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "Paste your curl command",
+      text: "Copy any curl command (from API docs, terminal, etc.) and paste it into the input box.",
+      url: "",
+    },
+    {
+      name: "Choose output format",
+      text: "Select fetch, axios, or XMLHttpRequest depending on your project needs.",
+      url: "",
+    },
+    {
+      name: "Copy the JavaScript code",
+      text: "Click copy and paste the generated JavaScript code directly into your project.",
+      url: "",
     },
   ],
+  howToTotalTime: "PT1M",
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
-  howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
-  ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
-
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
+  // FAQ
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What curl commands does this support?",
+      answer:
+        "The tool supports all common curl options including -X (method), -H (headers), -d / --data / --data-raw / --data-binary (request body), --json, -u (basic auth), -b (cookies), -L (follow redirects), --compressed, and URL as positional argument.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Does this tool send my data anywhere?",
+      answer:
+        "No. Everything runs 100% in your browser using JavaScript. Your curl commands are never sent to any server.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can I convert curl to axios?",
+      answer:
+        "Yes — just select 'axios' as the output format and the tool generates ready-to-use axios code with the correct method, headers, and body.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Why is this useful?",
+      answer:
+        "API docs and tutorials often use curl examples. This tool saves you from manually translating them to fetch/axios code every time — a common developer workflow.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
+  // Pages
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "cURL to Fetch Converter — Convert curl to JavaScript fetch / axios",
+      description:
+        "Instantly convert curl commands to JavaScript fetch, axios, or XMLHttpRequest code. Free browser-only tool — no signup required.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
