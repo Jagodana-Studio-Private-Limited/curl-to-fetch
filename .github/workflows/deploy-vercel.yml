@@ -35,6 +35,11 @@ jobs:
       - name: Install Vercel CLI
         run: npm install -g vercel
 
+      - name: Link or Create Vercel Project
+        run: |
+          rm -rf .vercel
+          vercel link --yes --project $SLUG --token=${{ secrets.VERCEL_TOKEN }}
+
       - name: Pull Vercel Environment
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
@@ -48,9 +53,11 @@ jobs:
           echo "DEPLOYMENT_URL=$DEPLOYMENT_URL" >> $GITHUB_ENV
           echo "Deployment URL: $DEPLOYMENT_URL"
 
-      - name: Attach Custom Domain
+      - name: Get Project ID and Attach Custom Domain
         run: |
-          PROJECT_ID="prj_IUyd9WWPVWCr9Icnm43pmjKzXyjm"
+          PROJECT_ID=$(cat .vercel/project.json | python3 -c "import sys,json; print(json.load(sys.stdin)['projectId'])")
+          echo "PROJECT_ID=$PROJECT_ID" >> $GITHUB_ENV
+          echo "Attaching domain $DOMAIN to project $PROJECT_ID"
           curl -X POST \
           "https://api.vercel.com/v10/projects/${PROJECT_ID}/domains?teamId=${{ secrets.VERCEL_TEAM_ID }}" \
           -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
